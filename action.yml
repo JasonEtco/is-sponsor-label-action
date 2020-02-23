@@ -1,0 +1,8 @@
+name: Sponsor Labels
+description: Labels issues and pull requests if the creator is a sponsor
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: heart
+  color: red

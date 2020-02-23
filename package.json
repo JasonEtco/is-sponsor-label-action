@@ -1,0 +1,24 @@
+{
+  "name": "is-sponsor-label",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "GITHUB_EVENT_PATH=$(pwd)/tests/fixtures/sponsor.json npm start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "actions-toolkit": "^2.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^24.5.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}

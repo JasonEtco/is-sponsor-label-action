@@ -1,0 +1,17 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 1,
+    "author": {
+      "login": "matchai",
+      "node_id": "MDQ6VXNlcjQ2NTgyMDg="
+    }
+  },
+  "repository": {
+    "id": 29001594,
+    "name": "awesome-gametalks",
+    "owner": {
+      "login": "hzoo"
+    }
+  }
+}
