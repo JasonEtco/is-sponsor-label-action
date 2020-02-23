@@ -8,8 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@actions/core": "^1.2.2",
-    "actions-toolkit": "^2.2.0",
+    "actions-toolkit": "^3.0.0",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
