@@ -2,7 +2,7 @@
   "action": "opened",
   "issue": {
     "number": 1,
-    "author": {
+    "user": {
       "login": "JasonEtco",
       "node_id": "MDQ6VXNlcjEwNjYwNDY4"
     }

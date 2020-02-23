@@ -2,7 +2,7 @@
   "action": "opened",
   "issue": {
     "number": 1,
-    "author": {
+    "user": {
       "login": "matchai",
       "node_id": "MDQ6VXNlcjQ2NTgyMDg="
     }
