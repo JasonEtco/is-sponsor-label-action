@@ -8,15 +8,7 @@
 #
 # You can specify a version:
 # FROM node:10-slim
-FROM node:slim
-
-# Labels for GitHub to read your action
-LABEL "com.github.actions.name"="Sponsor Labels"
-LABEL "com.github.actions.description"="Labels issues and pull requests if the creator is a sponsor"
-# Here are all of the available icons: https://feathericons.com/
-LABEL "com.github.actions.icon"="dollar-sign"
-# And all of the available colors: https://developer.github.com/actions/creating-github-actions/creating-a-docker-container/#label
-LABEL "com.github.actions.color"="red"
+FROM node:alpine
 
 # Copy the package.json and package-lock.json
 COPY package*.json ./
