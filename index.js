@@ -1,5 +1,6 @@
 require('dotenv').config()
 const { Toolkit } = require('actions-toolkit')
+const core = require('@actions/core')
 
 /**
  * Grabs the node_id of the creator
@@ -77,11 +78,14 @@ Toolkit.run(async tools => {
   const isSponsor = await userIsSponsor(tools, nodeId)
   if (!isSponsor) return
 
+  // Get the label to add
+  const label = core.getInput('label') || 'sponsor'
+
   // User is a sponsor, let's add a label
   return tools.github.issues.addLabels({
     ...tools.context.repo,
     issue_number: tools.context.issue.number,
-    labels: ['sponsor']
+    labels: [label]
   })
 }, {
   event: [
