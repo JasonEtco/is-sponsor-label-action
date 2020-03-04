@@ -1,4 +1,4 @@
-<h1 align="center">[WIP]</h1>
+<h1 align="center">💖</h1>
 <h3 align="center">A GitHub Action that labels issues/PRs if the creator is a sponsor of the owner</h3>
 <p align="center"><a href="https://github.com/JasonEtco/is-sponsor-label-action"><img alt="GitHub Actions status" src="https://github.com/JasonEtco/is-sponsor-label-action/workflows/Node%20CI/badge.svg"></a> <a href="https://codecov.io/gh/JasonEtco/is-sponsor-label-action/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/is-sponsor-label-action" alt="Codecov"></a></p>
 
