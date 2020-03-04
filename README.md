@@ -7,7 +7,7 @@
 
 Imagine Alice sponsors Bob through GitHub Sponsors, and Bob owns a public repo, which includes this `sponsor-label` action. Then, when Alice opens an issue or PR on that repo, a bot will automatically add a `sponsor 💖` label.
 
-![](screenshot.png)
+![Screenshot of an issue created by a sponsor, with the sponsor label added](screenshot.png)
 
 You can see the above example here: https://github.com/devonzuegel/highly-exporter/issues/4
 
