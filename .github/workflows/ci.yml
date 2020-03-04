@@ -19,3 +19,7 @@ jobs:
         node-version: 12.x
     - run: npm ci
     - run: npm test
+    - name: codecov
+      run: npx codecov
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
