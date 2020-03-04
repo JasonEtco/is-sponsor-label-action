@@ -12,7 +12,7 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "jest": "^24.5.0",
+    "jest": "^25.1.0",
     "standard": "^14.3.1"
   },
   "standard": {
