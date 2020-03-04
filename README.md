@@ -3,6 +3,14 @@
 
 **Note**: currently only works for user-owned repositories. This is due to a limitation of the GraphQL API, since we can't query for a "user or organization" in one request.
 
+## Examples
+
+Imagine Alice sponsors Bob through GitHub Sponsors, and Bob owns a public repo, which includes this `sponsor-label` action. Then, when Alice opens an issue or PR on that repo, a bot will automatically add a `sponsor 💖` label.
+
+![](screenshot.png)
+
+You can see the above example here: https://github.com/devonzuegel/highly-exporter/issues/4
+
 ## Usage
 
 You can create a `.github/workflows/label-sponsors.yml` file:
@@ -29,11 +37,11 @@ This will trigger the action when an issue or pull request is opened. You'll nee
 By default, the label `sponsor` will be applied. If you have a different label you want to use, you can set that:
 
 ```yaml
-- uses: JasonEtco/is-sponsor-label-action@master
-  with:
-    label: Sponsor Request ❤️
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: JasonEtco/is-sponsor-label-action@master
+        with:
+          label: Sponsor Request ❤️
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ## How it works
