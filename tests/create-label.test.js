@@ -25,7 +25,7 @@ describe('createLabel', () => {
 
     expect(nocked.isDone()).toBe(true)
     expect(params).toMatchObject({
-      name: 'sponsor'
+      name: 'sponsor 💖'
     })
   })
 })
