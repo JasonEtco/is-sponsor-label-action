@@ -3,7 +3,7 @@ description: Labels issues and pull requests if the author is a sponsor
 inputs:
   label:
     description: The label to apply to the issue or pull request if the author is a sponsor.
-    default: sponsor
+    default: sponsor 💖
 runs:
   using: docker
   image: Dockerfile
