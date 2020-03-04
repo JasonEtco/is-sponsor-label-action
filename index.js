@@ -2,6 +2,7 @@ require('dotenv').config()
 const { Toolkit } = require('actions-toolkit')
 const getAuthorNodeId = require('./lib/get-author-id')
 const userIsSponsor = require('./lib/user-is-sponsor')
+const createLabel = require('./lib/create-label')
 const addLabel = require('./lib/add-label')
 
 Toolkit.run(async tools => {
@@ -16,6 +17,7 @@ Toolkit.run(async tools => {
   }
 
   // Add the label
+  await createLabel(tools)
   await addLabel(tools)
   tools.log.success('Label successfully applied. Have a nice day!')
 }, {
