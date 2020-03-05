@@ -11,6 +11,7 @@
     "id": 29001594,
     "name": "awesome-gametalks",
     "owner": {
+      "type": "User",
       "login": "hzoo"
     }
   }
