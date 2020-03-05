@@ -11,6 +11,7 @@
     "id": 110556535,
     "name": "testing",
     "owner": {
+      "type": "User",
       "login": "JasonEtco"
     }
   }
