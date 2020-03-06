@@ -36,7 +36,7 @@ describe('addLabel', () => {
   })
 
   it('does not bork if the label already exists', async () => {
-    nocked = nocked.replyWithError(500, (_, body) => { params = body })
+    nocked = nocked.replyWithError(400, (_, body) => { params = body })
 
     await addLabel(tools)
 
