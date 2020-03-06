@@ -28,4 +28,15 @@ describe('createLabel', () => {
       name: 'sponsor 💖'
     })
   })
+
+  it('does not bork if the label already exists', async () => {
+    nocked = nocked.replyWithError(400, (_, body) => { params = body })
+
+    await createLabel(tools)
+
+    expect(nocked.isDone()).toBe(true)
+    expect(params).toMatchObject({
+      name: 'sponsor 💖'
+    })
+  })
 })
