@@ -27,7 +27,7 @@ jobs:
     name: is-sponsor-label
     runs-on: ubuntu-latest
     steps:
-      - uses: JasonEtco/is-sponsor-label-action@v1Point t
+      - uses: JasonEtco/is-sponsor-label-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -37,7 +37,7 @@ This will trigger the action when an issue or pull request is opened. You'll nee
 By default, the label `sponsor` will be applied. If you have a different label you want to use, you can set that:
 
 ```yaml
-      - uses: JasonEtco/is-sponsor-label-action@v1Point t
+      - uses: JasonEtco/is-sponsor-label-action@v1
         with:
           label: Sponsor Request ❤️
         env:
