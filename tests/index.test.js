@@ -24,14 +24,8 @@ describe('is-sponsor-label', () => {
     const scoped = nock('https://api.github.com')
       .post('/graphql').reply(200, {
         data: {
-          user: {
-            sponsorshipsAsMaintainer: {
-              nodes: [{
-                sponsor: {
-                  id: tools.context.payload.issue.user.node_id
-                }
-              }]
-            }
+          node: {
+            isSponsoredBy: true
           }
         }
       })
@@ -46,11 +40,8 @@ describe('is-sponsor-label', () => {
     const scoped = nock('https://api.github.com')
       .post('/graphql').reply(200, {
         data: {
-          user: {
-            sponsorshipsAsMaintainer: {
-              pageInfo: { hasNexPage: false },
-              nodes: []
-            }
+          node: {
+            isSponsoredBy: false
           }
         }
       })

@@ -15,7 +15,8 @@ Object.assign(process.env, {
   GITHUB_REPOSITORY: 'JasonEtco/waddup',
   GITHUB_ACTION: 'create-an-issue',
   GITHUB_EVENT_PATH: path.join(__dirname, 'fixtures', 'sponsor.json'),
-  GITHUB_WORKSPACE: path.join(__dirname, 'fixtures')
+  GITHUB_WORKSPACE: path.join(__dirname, 'fixtures'),
+  GITHUB_ACTOR: 'matchai'
 })
 
 injectDefaultValues()
