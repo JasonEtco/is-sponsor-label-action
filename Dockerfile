@@ -8,7 +8,7 @@
 #
 # You can specify a version:
 # FROM node:10-slim
-FROM node:alpine
+FROM node:14-alpine3.12
 
 # Copy the package.json and package-lock.json
 COPY package*.json ./
