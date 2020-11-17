@@ -6,7 +6,7 @@ describe('is-sponsor-label', () => {
 
   beforeEach(() => {
     Toolkit.run = jest.fn(fn => { actionFn = fn })
-    require('..')
+    require('../index.js')
 
     tools = new Toolkit({
       logger: {
