@@ -27,7 +27,7 @@ describe('is-sponsor-label', () => {
           user: {
             sponsorshipsAsMaintainer: {
               nodes: [{
-                sponsor: {
+                sponsorEntity: {
                   id: tools.context.payload.issue.user.node_id
                 }
               }]
