@@ -31,7 +31,7 @@ describe('userIsSponsor', () => {
         user: {
           sponsorshipsAsMaintainer: {
             nodes: [{
-              sponsor: {
+              sponsorEntity: {
                 id: nodeId
               }
             }]
@@ -70,7 +70,7 @@ describe('userIsSponsor', () => {
               endCursor: 'endCursor'
             },
             nodes: [{
-              sponsor: {
+              sponsorEntity: {
                 id: nodeId
               }
             }]
@@ -96,7 +96,7 @@ describe('userIsSponsor', () => {
               hasNextPage: false
             },
             nodes: [{
-              sponsor: {
+              sponsorEntity: {
                 id: 'nope'
               }
             }]
@@ -121,7 +121,7 @@ describe('userIsSponsor', () => {
               hasNextPage: false
             },
             nodes: [{
-              sponsor: {
+              sponsorEntity: {
                 id: nodeId
               }
             }]
