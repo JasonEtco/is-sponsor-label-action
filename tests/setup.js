@@ -4,7 +4,7 @@ const jsYaml = require('js-yaml')
 
 function injectDefaultValues () {
   const yaml = fs.readFileSync(path.join(__dirname, '../action.yml'), 'utf8')
-  const { inputs } = jsYaml.safeLoad(yaml)
+  const { inputs } = jsYaml.load(yaml)
 
   for (const key in inputs) {
     process.env[`INPUT_${key.toUpperCase()}`] = inputs[key].default
